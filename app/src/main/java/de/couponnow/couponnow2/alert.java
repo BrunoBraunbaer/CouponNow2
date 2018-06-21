@@ -1,12 +1,12 @@
 package de.couponnow.couponnow2;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.app.Activity;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class alert extends Activity {
 
     public Button MainActivity;
 
@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         MainActivity.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent MainActivity = new Intent(MainActivity.this, MainActivity.class);
+                Intent MainActivity = new Intent(alert.this, MainActivity.class);
                 startActivity(MainActivity);
             }
         });
@@ -25,33 +25,33 @@ public class MainActivity extends AppCompatActivity {
 
     public Button mySite;
 
-        public void init1(){
+    public void init1(){
 
-            mySite= (Button)findViewById(R.id.mySite);
-            mySite.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    Intent mySite = new Intent(MainActivity.this, mySite.class);
-                    startActivity(mySite);
-                }
-            });
+        mySite= (Button)findViewById(R.id.mySite);
+        mySite.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent mySite = new Intent(alert.this, mySite.class);
+                startActivity(mySite);
+            }
+        });
 
-        }
+    }
 
     public Button search;
 
-        public void init2(){
+    public void init2(){
 
-            search= (Button)findViewById(R.id.search);
-            search.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    Intent search = new Intent(MainActivity.this, search.class);
-                    startActivity(search);
-                }
-            });
+        search= (Button)findViewById(R.id.search);
+        search.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent search = new Intent(alert.this, search.class);
+                startActivity(search);
+            }
+        });
 
-        }
+    }
 
     public Button alert;
 
@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
         alert.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent alert = new Intent(MainActivity.this, alert.class);
+                Intent alert = new Intent(alert.this, alert.class);
                 startActivity(alert);
             }
         });
@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
         sell.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent sell = new Intent(MainActivity.this, sell.class);
+                Intent sell = new Intent(alert.this, sell.class);
                 startActivity(sell);
             }
         });
@@ -87,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_alert);
         init0();
         init1();
         init2();
@@ -95,6 +95,4 @@ public class MainActivity extends AppCompatActivity {
         init4();
     }
 
-
 }
-

@@ -4,8 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    tools:layout_editor_absoluteY="25dp">
+    tools:context=".alert">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alert"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="98dp" />
 
     <Button
         android:id="@+id/start"
@@ -62,4 +69,5 @@
         android:onClick="sell"
         app:layout_constraintBaseline_toBaselineOf="@+id/alerts"
         app:layout_constraintLeft_toRightOf="@+id/alerts" />
+
 </android.support.constraint.ConstraintLayout>

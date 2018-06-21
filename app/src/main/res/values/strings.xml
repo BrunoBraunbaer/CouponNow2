@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">CouponNow2</string>
+    <string name="title_activity_my_site">mySite</string>
+    <string name="title_activity_search">search</string>
+    <string name="title_activity_alert">alert</string>
+    <string name="title_activity_sell">sell</string>
 </resources>

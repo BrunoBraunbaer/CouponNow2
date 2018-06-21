@@ -16,6 +16,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".mySite"
+            android:label="@string/title_activity_my_site" />
+        <activity
+            android:name=".search"
+            android:label="@string/title_activity_search" />
+        <activity
+            android:name=".sell"
+            android:label="@string/title_activity_sell" />
+        <activity
+            android:name=".alert"
+            android:label="@string/title_activity_alert" />
     </application>
 
 </manifest>
